@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquecimento Global - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="causas.html"><i class="fas fa-fire"></i> Causas</a></li>
+                <li><a href="consequencias.html"><i class="fas fa-exclamation-triangle"></i> Consequências</a></li>
+                <li><a href="solucoes.html"><i class="fas fa-lightbulb"></i> Soluções</a></li>
+                <li><a href="forum.html"><i class="fas fa-comments"></i> Fórum</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="destaque">
+            <h1>Aquecimento Global: O Maior Desafio do Nosso Tempo</h1>
+            <p class="destaque-texto">Monitoramento em tempo real das mudanças climáticas e seus impactos</p>
+            
+            <div class="graficos-container">
+                <div class="grafico-box">
+                    <canvas id="temperaturaChart"></canvas>
+                </div>
+                <div class="grafico-box">
+                    <canvas id="co2Chart"></canvas>
+                </div>
+                <div class="grafico-box">
+                    <canvas id="geloChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section class="alertas">
+            <div class="alerta-item alerta-urgente">
+                <i class="fas fa-exclamation-circle"></i>
+                <p>2023 foi o ano mais quente já registrado</p>
+            </div>
+            <div class="alerta-item alerta-info">
+                <i class="fas fa-info-circle"></i>
+                <p>Nível do mar subiu 10cm nos últimos 30 anos</p>
+            </div>
+        </section>
+
+        <section class="noticias">
+            <h2><i class="fas fa-newspaper"></i> Últimas Notícias</h2>
+            <div class="noticias-grid">
+                <article class="noticia-card">
+                    <div class="noticia-imagem">
+                        <img src="images/geleiras.jpg" alt="Derretimento glacial">
+                        <span class="noticia-categoria">Ciência</span>
+                    </div>
+                    <div class="noticia-conteudo">
+                        <h3>Geleiras do Ártico desaparecem em ritmo recorde</h3>
+                        <p class="noticia-data"><i class="far fa-calendar-alt"></i> 15/06/2023</p>
+                        <p class="noticia-resumo">Novo estudo da NASA mostra que o derretimento acelerou 30% na última década, liberando grandes quantidades de metano...</p>
+                        <a href="#" class="btn"><i class="fas fa-book-reader"></i> Leia mais</a>
+                    </div>
+                </article>
+                
+                <article class="noticia-card">
+                    <div class="noticia-imagem">
+                        <img src="images/amazonia.jpg" alt="Floresta Amazônica">
+                        <span class="noticia-categoria">Meio Ambiente</span>
+                    </div>
+                    <div class="noticia-conteudo">
+                        <h3>Desmatamento na Amazônia atinge maior nível em 15 anos</h3>
+                        <p class="noticia-data"><i class="far fa-calendar-alt"></i> 10/06/2023</p>
+                        <p class="noticia-resumo">Dados do INPE revelam aumento de 22% no desmatamento comparado ao ano passado, comprometendo o equilíbrio climático...</p>
+                        <a href="#" class="btn"><i class="fas fa-book-reader"></i> Leia mais</a>
+                    </div>
+                </article>
+                
+                <article class="noticia-card">
+                    <div class="noticia-imagem">
+                        <img src="images/energia-solar.jpg" alt="Painéis solares">
+                        <span class="noticia-categoria">Tecnologia</span>
+                    </div>
+                    <div class="noticia-conteudo">
+                        <h3>Brasil bate recorde em geração de energia solar</h3>
+                        <p class="noticia-data"><i class="far fa-calendar-alt"></i> 05/06/2023</p>
+                        <p class="noticia-resumo">Capacidade instalada de energia fotovoltaica cresceu 50% no primeiro semestre, mostrando potencial para reduzir emissões...</p>
+                        <a href="#" class="btn"><i class="fas fa-book-reader"></i> Leia mais</a>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="noticias-link">
+                <a href="#" class="btn-mais">Ver todas as notícias <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </section>
+
+        <section class="curiosidades">
+            <h2><i class="fas fa-question-circle"></i> Você Sabia?</h2>
+            <div class="curiosidades-grid">
+                <div class="curiosidade-card">
+                    <i class="fas fa-temperature-high"></i>
+                    <p>A última década (2011-2020) foi a mais quente já registrada na história</p>
+                </div>
+                <div class="curiosidade-card">
+                    <i class="fas fa-water"></i>
+                    <p>O nível do mar está subindo 3.7 mm por ano devido ao derretimento das geleiras</p>
+                </div>
+                <div class="curiosidade-card">
+                    <i class="fas fa-industry"></i>
+                    <p>As concentrações de CO₂ na atmosfera são as mais altas em 2 milhões de anos</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sobre Nós</h3>
+                <p>Informações científicas sobre aquecimento global e mudanças climáticas</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-external-link-alt"></i> IPCC</a></li>
+                    <li><a href="#"><i class="fas fa-external-link-alt"></i> NASA Climate</a></li>
+                    <li><a href="#"><i class="fas fa-external-link-alt"></i> NOAA</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p><i class="fas fa-envelope"></i> contato@aquecimentoglobal.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2023 Aquecimento Global - Conscientização | Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script>
+        // Gráfico de Temperatura Global
+        const tempCtx = document.getElementById('temperaturaChart').getContext('2d');
+        new Chart(tempCtx, {
+            type: 'line',
+            data: {
+                labels: ['1880', '1900', '1920', '1940', '1960', '1980', '2000', '2020', '2023'],
+                datasets: [{
+                    label: 'Variação da Temperatura (°C)',
+                    data: [-0.2, -0.1, -0.1, 0.1, 0.0, 0.3, 0.6, 1.2, 1.45],
+                    borderColor: 'rgba(231, 76, 60, 1)',
+                    backgroundColor: 'rgba(231, 76, 60, 0.2)',
+                    tension: 0.3,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Aumento da Temperatura Global desde 1880',
+                        font: {
+                            size: 16,
+                            weight: 'bold'
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return context.parsed.y.toFixed(2) + '°C acima da média pré-industrial';
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        title: {
+                            display: true,
+                            text: 'Variação de Temperatura (°C)'
+                        }
+                    }
+                }
+            }
+        });
+
+        // Gráfico de Concentração de CO2
+        const co2Ctx = document.getElementById('co2Chart').getContext('2d');
+        new Chart(co2Ctx, {
+            type: 'bar',
+            data: {
+                labels: ['1950', '1960', '1970', '1980', '1990', '2000', '2010', '2020'],
+                datasets: [{
+                    label: 'Concentração de CO2 (ppm)',
+                    data: [310, 315, 325, 340, 355, 370, 390, 415],
+                    backgroundColor: 'rgba(52, 152, 219, 0.7)',
+                    borderColor: 'rgba(52, 152, 219, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Concentração de CO2 na Atmosfera',
+                        font: {
+                            size: 16,
+                            weight: 'bold'
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return context.parsed.y + ' partes por milhão (ppm)';
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: false,
+                        min: 300,
+                        title: {
+                            display: true,
+                            text: 'CO2 (ppm)'
+                        }
+                    }
+                }
+            }
+        });
+
+        // Gráfico de Extensão de Gelo Ártico
+        const geloCtx = document.getElementById('geloChart').getContext('2d');
+        new Chart(geloCtx, {
+            type: 'line',
+            data: {
+                labels: ['1980', '1990', '2000', '2010', '2020', '2023'],
+                datasets: [{
+                    label: 'Extensão Mínima (milhões de km²)',
+                    data: [7.8, 7.5, 6.3, 5.6, 4.3, 4.1],
+                    borderColor: 'rgba(41, 128, 185, 1)',
+                    backgroundColor: 'rgba(41, 128, 185, 0.2)',
+                    tension: 0.3,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Redução do Gelo Ártico no Verão',
+                        font: {
+                            size: 16,
+                            weight: 'bold'
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return context.parsed.y + ' milhões de km²';
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        title: {
+                            display: true,
+                            text: 'Extensão (milhões de km²)'
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

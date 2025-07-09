@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórum sobre Aquecimento Global</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="causas.html">Causas</a></li>
+                <li><a href="consequencias.html">Consequências</a></li>
+                <li><a href="solucoes.html">Soluções</a></li>
+                <li><a href="forum.html">Fórum</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Fórum de Discussão</h1>
+        
+        <div class="forum-container">
+            <h2>Participe da Discussão</h2>
+            <p>Compartilhe suas ideias, dúvidas e soluções sobre o aquecimento global.</p>
+            
+            <div class="discussions-list">
+                <!-- Discussão 1 -->
+                <div class="discussion">
+                    <div class="discussion-header">
+                        <span class="discussion-author">Maria Silva</span>
+                        <span class="discussion-date">15/10/2023</span>
+                    </div>
+                    <h3 class="discussion-title">Como reduzir meu consumo de plástico?</h3>
+                    <p class="discussion-content">
+                        Gostaria de dicas práticas para reduzir o uso de plástico no dia a dia, 
+                        já que sabemos que a produção de plástico contribui para as emissões de CO₂.
+                    </p>
+                    <div class="discussion-actions">
+                        <a href="#">5 respostas</a>
+                        <a href="#">Responder</a>
+                    </div>
+                </div>
+                
+                <!-- Discussão 2 -->
+                <div class="discussion">
+                    <div class="discussion-header">
+                        <span class="discussion-author">João Oliveira</span>
+                        <span class="discussion-date">12/10/2023</span>
+                    </div>
+                    <h3 class="discussion-title">Energia solar compensa financeiramente?</h3>
+                    <p class="discussion-content">
+                        Estou pensando em instalar painéis solares em casa, mas gostaria de 
+                        ouvir experiências de quem já fez. Em quanto tempo vem o retorno 
+                        do investimento?
+                    </p>
+                    <div class="discussion-actions">
+                        <a href="#">8 respostas</a>
+                        <a href="#">Responder</a>
+                    </div>
+                </div>
+                
+                <!-- Discussão 3 -->
+                <div class="discussion">
+                    <div class="discussion-header">
+                        <span class="discussion-author">Ana Costa</span>
+                        <span class="discussion-date">10/10/2023</span>
+                    </div>
+                    <h3 class="discussion-title">Projetos comunitários de reflorestamento</h3>
+                    <p class="discussion-content">
+                        Alguém conhece projetos comunitários de plantio de árvores na região 
+                        sudeste que aceitem voluntários nos finais de semana?
+                    </p>
+                    <div class="discussion-actions">
+                        <a href="#">3 respostas</a>
+                        <a href="#">Responder</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Formulário para nova discussão -->
+            <div class="new-discussion">
+                <h3>Iniciar Nova Discussão</h3>
+                <form id="discussion-form">
+                    <div class="form-group">
+                        <label for="name">Seu Nome:</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="title">Título da Discussão:</label>
+                        <input type="text" id="title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="content">Sua Mensagem:</label>
+                        <textarea id="content" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Publicar Discussão</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2023 Aquecimento Global - Todos os direitos reservados</p>
+    </footer>
+
+    <script>
+        // Simulação de funcionalidade do fórum
+        document.getElementById('discussion-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Discussão criada com sucesso! (Funcionalidade simulada)');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
